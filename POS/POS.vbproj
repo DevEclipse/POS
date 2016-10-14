@@ -74,13 +74,13 @@
   <ItemGroup>
     <Compile Include="Classes\Database.vb" />
     <Compile Include="Classes\Item.vb" />
-    <Compile Include="Forms\AccountChange.vb" />
-    <Compile Include="Forms\Inventory.vb" />
-    <Compile Include="Forms\Main.vb" />
-    <Compile Include="Forms\Password.vb" />
-    <Compile Include="Forms\Splash.vb" />
-    <Compile Include="Forms\SQ.vb" />
-    <Compile Include="Forms\UserMaintenance.vb" />
+    <Compile Include="Classes\Account.vb" />
+    <Compile Include="Forms\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -101,6 +101,9 @@
     <Compile Include="Classes\User.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
